@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name ="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name ="title" value="..." />
+        <put-attribute name ="header" value ="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name ="content" value ="BASE"/>
+        <put-attribute name ="footer" value ="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <definition name="halls" extends="baseLayout">
+        <put-attribute name="title" value="Sảnh cưới" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/halls.jsp" />
+    </definition>
+    
+    <definition name="list_halls" extends="baseLayout">
+        <put-attribute name="title" value="Sảnh cưới" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/list_halls.jsp" />
+    </definition>
+    
+    <definition name="menu" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị menu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/menu.jsp" />
+    </definition>
+    
+    <definition name="list_menu" extends="baseLayout">
+        <put-attribute name="title" value="thực đơn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/list_menu.jsp" />
+    </definition>
+    
+    <definition name="branch" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị branch" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/branch.jsp" />
+    </definition>
+    
+    <definition name="list_branch" extends="baseLayout">
+        <put-attribute name="title" value="Chi nhánh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/list_branch.jsp" />
+    </definition>
+    
+    <definition name="service" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị dịch vụ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/service.jsp" />
+    </definition>
+    
+    <definition name="list_service" extends="baseLayout">
+        <put-attribute name="title" value="Dịnh vụ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/list_service.jsp" />
+    </definition>
+    
+    <definition name="feedbacks" extends="baseLayout">
+        <put-attribute name="title" value="Phản hồi khách hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/feedbacks.jsp" />
+    </definition>
+    
+    <definition name="event" extends="baseLayout">
+        <put-attribute name="title" value="Sự kiện tiệc cưới" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/event.jsp" />
+    </definition>
+    
+   
+   
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Kí" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/register.jsp" />
+    </definition>
+</tiles-definitions>
+
